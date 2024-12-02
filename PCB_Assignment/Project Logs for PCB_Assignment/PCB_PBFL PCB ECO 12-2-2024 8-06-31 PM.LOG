@@ -1,0 +1,13 @@
+Removed Pin From Net: NetName=VCC Pin=P1-1
+Removed Pin From Net: NetName=GND Pin=R7-1
+Removed Pin From Net: NetName=GND Pin=R7-2
+Removed Pin From Net: NetName=GND Pin=R8-1
+Removed Pin From Net: NetName=GND Pin=R8-2
+Removed Member From Class: ClassName=SCH_PBFL Member=R7
+Removed Member From Class: ClassName=SCH_PBFL Member=R8
+Change Component Footprint: Designator=D1 Old Footprint=DO-35 (SOD27 ) New Footprint=SOD123
+Added Pin To Net: NetName=VCC Pin=BT1-1
+Change Net Name : Old Net Name=VCC New Net Name=BAT
+Added Pin To Net: NetName=VCC Pin=P1-1
+Added Pin To Net: NetName=VCC Pin=R3-1
+Added Net: Name=VCC
