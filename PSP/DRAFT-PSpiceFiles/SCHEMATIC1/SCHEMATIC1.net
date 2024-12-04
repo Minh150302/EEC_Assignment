@@ -1,5 +1,6 @@
 * source DRAFT
-R_R1         N00205 N00209  67 TC=0,0 
-C_C1         0 N00209  10uF  TC=0,0 
+R_R1         N01142 N00209  0.001 TC=0,0 
+V_V1         N01138 0 3Vdc
+D_D3         N01138 N01142 Dbreak 
 X_D2         0 N00209 Zener_parameterized PARAMS: VZT=5 RSF=100m
-V_V1         N00205 0 3Vdc
+C_C1         0 N00209  0.1uF  TC=0,0 

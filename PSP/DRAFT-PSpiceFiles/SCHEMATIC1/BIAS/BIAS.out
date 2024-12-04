@@ -1,7 +1,7 @@
 
-**** 12/04/24 16:21:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/04/24 21:06:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-PSpiceFiles\SCHEMATIC1\BIAS.sim ] 
+ ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     CIRCUIT DESCRIPTION
@@ -32,17 +32,18 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source DRAFT
-R_R1         N00205 N00209  67 TC=0,0 
-C_C1         0 N00209  10uF  TC=0,0 
+R_R1         N01142 N00209  0.001 TC=0,0 
+V_V1         N01138 0 3Vdc
+D_D3         N01138 N01142 Dbreak 
 X_D2         0 N00209 Zener_parameterized PARAMS: VZT=5 RSF=100m
-V_V1         N00205 0 3Vdc
+C_C1         0 N00209  0.1uF  TC=0,0 
 
 **** RESUMING BIAS.cir ****
 .END
 
-**** 12/04/24 16:21:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/04/24 21:06:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-PSpiceFiles\SCHEMATIC1\BIAS.sim ] 
+ ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -55,9 +56,9 @@ V_V1         N00205 0 3Vdc
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00205)    3.0000 (N00209)    2.9947 (X_D2.1)   -1.5100 (X_D2.3)    4.5047     
+(N00209)    2.4161 (N01138)    3.0000 (N01142)    2.4161 (X_D2.1)   -2.0887     
 
-(X_D2.9)-4.162E-15 
+(X_D2.3)    4.5047 (X_D2.9)-5.756E-15 
 
 
 
@@ -65,17 +66,17 @@ V_V1         N00205 0 3Vdc
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V1        -7.915E-05
+    V_V1        -6.385E-05
 
-    TOTAL POWER DISSIPATION   2.37E-04  WATTS
+    TOTAL POWER DISSIPATION   1.92E-04  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 12/04/24 16:21:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/04/24 21:06:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-PSpiceFiles\SCHEMATIC1\BIAS.sim ] 
+ ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-pspicefiles\schematic1\bias.sim ] 
 
 
  ****     JOB STATISTICS SUMMARY
@@ -85,6 +86,6 @@ V_V1         N00205 0 3Vdc
 
 
 
-  License check-out time            =        3.53
-  Total job time (using Solver 1)   =         .39
+  License check-out time            =        4.42
+  Total job time (using Solver 1)   =         .28
 
