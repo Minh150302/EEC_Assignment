@@ -1,0 +1,90 @@
+
+**** 12/04/24 16:21:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-PSpiceFiles\SCHEMATIC1\BIAS.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "BIAS.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DRAFT
+R_R1         N00205 N00209  67 TC=0,0 
+C_C1         0 N00209  10uF  TC=0,0 
+X_D2         0 N00209 Zener_parameterized PARAMS: VZT=5 RSF=100m
+V_V1         N00205 0 3Vdc
+
+**** RESUMING BIAS.cir ****
+.END
+
+**** 12/04/24 16:21:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-PSpiceFiles\SCHEMATIC1\BIAS.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00205)    3.0000 (N00209)    2.9947 (X_D2.1)   -1.5100 (X_D2.3)    4.5047     
+
+(X_D2.9)-4.162E-15 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -7.915E-05
+
+    TOTAL POWER DISSIPATION   2.37E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/04/24 16:21:54 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BIAS"  [ d:\study\ee\hk241\lab4\altium\assignment\psp\draft-PSpiceFiles\SCHEMATIC1\BIAS.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        3.53
+  Total job time (using Solver 1)   =         .39
+

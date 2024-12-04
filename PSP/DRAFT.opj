@@ -1,6 +1,6 @@
 (ExpressProject "DRAFT"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2023 S009-[12/02/24]")
+  (SoftwareVersion "17.4-2023 S009-[12/04/24]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -11,11 +11,19 @@
     (File ".\draft.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
   (Folder "Layout")
-  (Folder "Outputs")
+  (Folder "Outputs"
+    (File ".\draft-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\draft-pspicefiles\schematic1\bias.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\draft-pspicefiles\schematic1\bias.sim"
+        (DisplayName "SCHEMATIC1-BIAS")
+        (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -23,4 +31,61 @@
     (Folder "Include Files"
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (Folder "Logs"))
+  (Folder "Logs")
+  (MPSSessionName "Huy Minh")
+  (PartMRUSelector
+    (0
+      (LibraryName "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (Zener_P
+      (FullPartName "Zener_P.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (DbreakZ
+      (FullPartName "DbreakZ.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "d:\study\ee\hk241\lab4\altium\assignment\psp\draft.dsn")
+      (Path "Design Resources"
+         "d:\study\ee\hk241\lab4\altium\assignment\psp\draft.dsn" "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "d:\study\ee\hk241\lab4\altium\assignment\psp\draft.dsn" "SCHEMATIC1"
+         "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 792"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1268 24 810")
+        (Scroll "420 235")
+        (Zoom "298")
+        (Occurrence "/"))
+      (Path "D:\STUDY\EE\HK241\LAB4\ALTIUM\ASSIGNMENT\PSP\DRAFT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

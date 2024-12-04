@@ -1,0 +1,6 @@
+.ALIASES
+R_R1            R1(1=N00205 2=N00209 ) CN @DRAFT.SCHEMATIC1(sch_1):INS40@ANALOG.R.Normal(chips)
+C_C1            C1(1=0 2=N00209 ) CN @DRAFT.SCHEMATIC1(sch_1):INS65@ANALOG.C.Normal(chips)
+X_D2            D2(1=0 2=N00209 ) CN @DRAFT.SCHEMATIC1(sch_1):INS115@BREAKOUT.Zener_P.Normal(chips)
+V_V1            V1(+=N00205 -=0 ) CN @DRAFT.SCHEMATIC1(sch_1):INS142@SOURCE.VDC.Normal(chips)
+.ENDALIASES
