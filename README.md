@@ -22,7 +22,7 @@ This repository contains the hardware and documentation for the Power Bank Proje
 ## Schematic and PCB Design
 You can view and edit the LaTeX documentation for this project on Overleaf:
 
-[Overleaf Project - Power Bank Documentation](https://www.overleaf.com/project/xxxxxxxxxxxxxx)
+[Overleaf Project - Power Bank Documentation](https://www.overleaf.com/read/wjwfctpdgjtb#444ff0)
 
 ## License
 This project is licensed under the MIT License.
